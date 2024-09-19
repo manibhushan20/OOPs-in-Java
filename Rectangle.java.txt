@@ -1,0 +1,18 @@
+// Rectangle.java
+package geometry;
+
+public class Rectangle {
+    private int width;
+    private int height;
+
+    public Rectangle(int width, int height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    public void display() {
+        System.out.println("Rectangle Details:");
+        System.out.println("Width: " + width);
+        System.out.println("Height: " + height);
+    }
+}

@@ -1,0 +1,24 @@
+// MyCalculator.java
+public class MyCalculator implements AdvancedArithmetic {
+    public int divisor_sum(int n) {
+        int sum = 0;
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                sum += i;
+            }
+        }
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        MyCalculator myCalculator = new MyCalculator();
+
+        int n1 = 400;
+        int n2 = 700;
+        int n3 = 1000;
+
+        System.out.println("Divisor sum for " + n1 + ": " + myCalculator.divisor_sum(n1));
+        System.out.println("Divisor sum for " + n2 + ": " + myCalculator.divisor_sum(n2));
+        System.out.println("Divisor sum for " + n3 + ": " + myCalculator.divisor_sum(n3));
+    }
+}
